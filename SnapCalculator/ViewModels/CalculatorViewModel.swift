@@ -30,13 +30,15 @@ class CalculatorViewModel : ObservableObject {
         switch(button){
         case .C:
             detailArray.removeAll()
-        case .plus, .minus, .multiply, .division:
+        case .plus, .minus, .multiplication, .multiplication_symbol, .division, .division_symbol:
             guard let lastElem = detailArray.last else { return }
             
             if lastElem != KeyboardKey.plus.rawValue &&
                 lastElem != KeyboardKey.minus.rawValue &&
-                lastElem != KeyboardKey.multiply.rawValue &&
-                lastElem != KeyboardKey.division.rawValue
+                lastElem != KeyboardKey.multiplication.rawValue &&
+                lastElem != KeyboardKey.multiplication_symbol.rawValue &&
+                lastElem != KeyboardKey.division.rawValue &&
+                lastElem != KeyboardKey.division_symbol.rawValue
             {
                 detailArray.append(button.rawValue)
             } else {
@@ -65,7 +67,7 @@ class CalculatorViewModel : ObservableObject {
         var plusAndMinus = true
         
         while multiplyAndDivide {
-            if let match = stringDetail.firstMatch(of: /([\d\.]+)([\*\/])([\d\.]+)/) {
+            if let match = stringDetail.firstMatch(of: /([\d\.]+)([×÷\*\/])([\d\.]+)/) {
                 
                 let left = Double(match.1) ?? 0.0
                 let right = Double(match.3) ?? 0.0
@@ -73,9 +75,9 @@ class CalculatorViewModel : ObservableObject {
                 var res: Double = 0
                 
                 switch (op) {
-                case .division:
+                case .division, .division_symbol:
                     res = left / right
-                case .multiply:
+                case .multiplication, .multiplication_symbol:
                     res = left * right
                 default:
                     break
@@ -115,7 +117,7 @@ class CalculatorViewModel : ObservableObject {
             }
         }
         
-        stringDetail = stringDetail.replacingOccurrences(of: "[\\+\\-\\*\\/]", with: "", options: .regularExpression)
+        stringDetail = stringDetail.replacingOccurrences(of: "[\\+\\-\\*\\/×÷]", with: "", options: .regularExpression)
         
         return stringDetail.isEmpty ? "0" : stringDetail
     }

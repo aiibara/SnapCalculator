@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @StateObject private var vm : CalculatorViewModel = CalculatorViewModel()
+    @StateObject var vm : CalculatorViewModel = CalculatorViewModel()
+    @StateObject var textRecoqnizerVM = TextRecoqnizerViewModel()
     @AppStorage("theme") var theme : String = "green"
     @AppStorage("saveTo") var saveTo : String = "fm"
     @State var isShowScannerView: Bool = false
@@ -26,8 +27,10 @@ struct DashboardView: View {
                     .padding(.horizontal, 24)
                     
                     VStack{
-                        if isShowImagePicker {
-                            ImagePickerView(calculatorVM: vm, isShow: $isShowImagePicker)
+                        if let image = textRecoqnizerVM.image {
+                            Image(uiImage: image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
                         } else {
                             HistoryView(calculatorVM: vm)
                         }
@@ -57,24 +60,12 @@ struct DashboardView: View {
             VStack{
                 CustomKeyboardView(vm: vm, isShowScannerView: $isShowScannerView)
             }
-                
-//            Button {
-//                vm.saveExpression()
-//            } label: {
-//                Text("save expression")
-//            }
-//
-//            ForEach(vm.savedExpressionsList, id:\.id) { item in
-//                VStack{
-//                    Text(item.detail)
-//                    Text(item.id.uuidString)
-//                    Text(item.createdDate?.formatted() ?? "")
-//                    Text(item.storage.rawValue)
-//                }
-//            }
         }
         
         .background(Color.atlasWhite)
+        .sheet(isPresented: $isShowScannerView) {
+            ImagePicker(vm: textRecoqnizerVM)
+        }
     }
 }
 

@@ -17,7 +17,7 @@ struct CustomKeyboardView: View {
         ], spacing: 0) {
             ForEach(Global.keyboard, id: \.self) { btn in
                 switch(btn) {
-                case .minus, .plus, .multiply, .division:
+                case .minus, .plus, .multiplication_symbol, .division_symbol:
                     Button {
                         vm.typing(button: btn)
                     } label: {

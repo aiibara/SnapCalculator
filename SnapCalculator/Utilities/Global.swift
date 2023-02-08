@@ -10,7 +10,9 @@ import Foundation
 enum KeyboardKey: String {
     case C = "C"
     case division = "/"
-    case multiply = "*"
+    case division_symbol = "÷"
+    case multiplication = "*"
+    case multiplication_symbol = "×"
     case plus = "+"
     case minus = "-"
     case one = "1"
@@ -33,8 +35,8 @@ enum KeyboardKey: String {
 struct Global {
     static let keyboard : [KeyboardKey] = [
         .C, .saveToFM, .saveToCoreData, .camera,
-        .one, .two, .three,.division,
-        .four, .five, .six,.multiply,
+        .one, .two, .three,.division_symbol,
+        .four, .five, .six,.multiplication_symbol,
         .seven, .eight, .nine, .plus,
         .none, .zero, .comma,.minus,
     ]
