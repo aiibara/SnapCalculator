@@ -1,0 +1,6 @@
+framework module Pods_SnapCalculator_SnapCalculatorUITests {
+  umbrella header "Pods-SnapCalculator-SnapCalculatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

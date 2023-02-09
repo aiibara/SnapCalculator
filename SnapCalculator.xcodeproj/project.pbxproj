@@ -36,6 +36,9 @@
 		0A95BDA32993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDA12993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift */; };
 		0A95BDAB2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDAA2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift */; };
 		0A95BDAD2993E7C800F8D3D1 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDAC2993E7C800F8D3D1 /* ScannerView.swift */; };
+		44FCC08E097C91BD2B81A84B /* Pods_SnapCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4485AB10AC24E6DCA72B7B5F /* Pods_SnapCalculator.framework */; };
+		5D36CBD4F31ECB5DBD2CD7B0 /* Pods_SnapCalculator_SnapCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B1DDCA1A69B7ACC6544EB2 /* Pods_SnapCalculator_SnapCalculatorUITests.framework */; };
+		C9761F374F118B0F9BE37CFB /* Pods_SnapCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6DDEE57275E2B8F8423864 /* Pods_SnapCalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,15 @@
 		0A95BDA12993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpressionCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0A95BDAA2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecoqnizerViewModel.swift; sourceTree = "<group>"; };
 		0A95BDAC2993E7C800F8D3D1 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		3108C63D4671DA34DB8C8EFD /* Pods-SnapCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculator.debug.xcconfig"; path = "Target Support Files/Pods-SnapCalculator/Pods-SnapCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		4485AB10AC24E6DCA72B7B5F /* Pods_SnapCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4514E5EBBD9487F1DEDF60D2 /* Pods-SnapCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculatorTests.debug.xcconfig"; path = "Target Support Files/Pods-SnapCalculatorTests/Pods-SnapCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4771E7F9043ACB2478348110 /* Pods-SnapCalculator-SnapCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculator-SnapCalculatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-SnapCalculator-SnapCalculatorUITests/Pods-SnapCalculator-SnapCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F6DDEE57275E2B8F8423864 /* Pods_SnapCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C194A0AC2CB3A1485B9335 /* Pods-SnapCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculator.release.xcconfig"; path = "Target Support Files/Pods-SnapCalculator/Pods-SnapCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		BC9F3E800B2AF5B7A69AD9A5 /* Pods-SnapCalculator-SnapCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculator-SnapCalculatorUITests.release.xcconfig"; path = "Target Support Files/Pods-SnapCalculator-SnapCalculatorUITests/Pods-SnapCalculator-SnapCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8B1DDCA1A69B7ACC6544EB2 /* Pods_SnapCalculator_SnapCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapCalculator_SnapCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3FAE614D59F0FE30B48F7A /* Pods-SnapCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-SnapCalculatorTests/Pods-SnapCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FCC08E097C91BD2B81A84B /* Pods_SnapCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9761F374F118B0F9BE37CFB /* Pods_SnapCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D36CBD4F31ECB5DBD2CD7B0 /* Pods_SnapCalculator_SnapCalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +138,8 @@
 				0A95BD56299264DA00F8D3D1 /* SnapCalculatorTests */,
 				0A95BD60299264DA00F8D3D1 /* SnapCalculatorUITests */,
 				0A95BD3F299264D800F8D3D1 /* Products */,
+				8484364EFFF81DBD967061B3 /* Pods */,
+				3C3A75065ADE65F261C25741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +268,30 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
+		3C3A75065ADE65F261C25741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4485AB10AC24E6DCA72B7B5F /* Pods_SnapCalculator.framework */,
+				D8B1DDCA1A69B7ACC6544EB2 /* Pods_SnapCalculator_SnapCalculatorUITests.framework */,
+				6F6DDEE57275E2B8F8423864 /* Pods_SnapCalculatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8484364EFFF81DBD967061B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3108C63D4671DA34DB8C8EFD /* Pods-SnapCalculator.debug.xcconfig */,
+				88C194A0AC2CB3A1485B9335 /* Pods-SnapCalculator.release.xcconfig */,
+				4771E7F9043ACB2478348110 /* Pods-SnapCalculator-SnapCalculatorUITests.debug.xcconfig */,
+				BC9F3E800B2AF5B7A69AD9A5 /* Pods-SnapCalculator-SnapCalculatorUITests.release.xcconfig */,
+				4514E5EBBD9487F1DEDF60D2 /* Pods-SnapCalculatorTests.debug.xcconfig */,
+				EC3FAE614D59F0FE30B48F7A /* Pods-SnapCalculatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A95BD67299264DA00F8D3D1 /* Build configuration list for PBXNativeTarget "SnapCalculator" */;
 			buildPhases = (
+				80C5C9721CCCF3E98F629C68 /* [CP] Check Pods Manifest.lock */,
 				0A95BD3A299264D800F8D3D1 /* Sources */,
 				0A95BD3B299264D800F8D3D1 /* Frameworks */,
 				0A95BD3C299264D800F8D3D1 /* Resources */,
+				179C63A86761BEE3C526E4E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +318,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A95BD6A299264DA00F8D3D1 /* Build configuration list for PBXNativeTarget "SnapCalculatorTests" */;
 			buildPhases = (
+				C095F65E8AAFDF3DE52E8DB8 /* [CP] Check Pods Manifest.lock */,
 				0A95BD4F299264DA00F8D3D1 /* Sources */,
 				0A95BD50299264DA00F8D3D1 /* Frameworks */,
 				0A95BD51299264DA00F8D3D1 /* Resources */,
@@ -293,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A95BD6D299264DA00F8D3D1 /* Build configuration list for PBXNativeTarget "SnapCalculatorUITests" */;
 			buildPhases = (
+				211133265F0D9D1CE2E47441 /* [CP] Check Pods Manifest.lock */,
 				0A95BD59299264DA00F8D3D1 /* Sources */,
 				0A95BD5A299264DA00F8D3D1 /* Frameworks */,
 				0A95BD5B299264DA00F8D3D1 /* Resources */,
+				71DC4650BC48A0FCA12DC215 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,6 +422,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		179C63A86761BEE3C526E4E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator/Pods-SnapCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator/Pods-SnapCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator/Pods-SnapCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		211133265F0D9D1CE2E47441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapCalculator-SnapCalculatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71DC4650BC48A0FCA12DC215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator-SnapCalculatorUITests/Pods-SnapCalculator-SnapCalculatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator-SnapCalculatorUITests/Pods-SnapCalculator-SnapCalculatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapCalculator-SnapCalculatorUITests/Pods-SnapCalculator-SnapCalculatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C5C9721CCCF3E98F629C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C095F65E8AAFDF3DE52E8DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A95BD3A299264D800F8D3D1 /* Sources */ = {
@@ -557,6 +706,7 @@
 		};
 		0A95BD68299264DA00F8D3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3108C63D4671DA34DB8C8EFD /* Pods-SnapCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -589,6 +739,7 @@
 		};
 		0A95BD69299264DA00F8D3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C194A0AC2CB3A1485B9335 /* Pods-SnapCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -621,6 +772,7 @@
 		};
 		0A95BD6B299264DA00F8D3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4514E5EBBD9487F1DEDF60D2 /* Pods-SnapCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -641,6 +793,7 @@
 		};
 		0A95BD6C299264DA00F8D3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3FAE614D59F0FE30B48F7A /* Pods-SnapCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -661,6 +814,7 @@
 		};
 		0A95BD6E299264DA00F8D3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4771E7F9043ACB2478348110 /* Pods-SnapCalculator-SnapCalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -679,6 +833,7 @@
 		};
 		0A95BD6F299264DA00F8D3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9F3E800B2AF5B7A69AD9A5 /* Pods-SnapCalculator-SnapCalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
