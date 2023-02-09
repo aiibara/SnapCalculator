@@ -9,16 +9,15 @@ import SwiftUI
 
 struct DashboardView: View {
     @StateObject var vm : CalculatorViewModel = CalculatorViewModel()
-    @StateObject var textRecoqnizerVM = TextRecoqnizerViewModel()
+    @StateObject var textRecognizerVM = TextRecognizerViewModel()
     @AppStorage("theme") var theme : String = "green"
     @AppStorage("saveTo") var saveTo : String = "fm"
     @State var isShowScannerView: Bool = false
-    @State var isShowImagePicker: Bool = false
+    @State var isShowImagePickerView: Bool = false
     
     var body: some View {
         VStack {
             VStack {
-                
                 VStack(alignment: .leading){
                     HStack{
                         Spacer()
@@ -27,11 +26,34 @@ struct DashboardView: View {
                     .padding(.horizontal, 24)
                     
                     VStack{
-                        if let image = textRecoqnizerVM.image {
-                            Image(uiImage: image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                        } else {
+                        if let image = textRecognizerVM.image {
+                            ZStack(alignment: .topTrailing){
+                                HStack {
+                                    Spacer()
+                                    Image(uiImage: image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                    Spacer()
+                                }
+                                Button {
+                                    textRecognizerVM.image = nil
+                                } label: {
+                                    HStack{
+                                        Image(systemName: "x.circle.fill")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .foregroundColor(Color.white)
+                                            .opacity(0.5)
+                                    }
+                                    .padding(.top, 20)
+                                    .padding(.trailing, 24)
+                                }
+                                
+                            }
+                            .background(Color.black)
+                            
+                        }
+                        else {
                             HistoryView(calculatorVM: vm)
                         }
                     }
@@ -57,14 +79,24 @@ struct DashboardView: View {
             
             Spacer()
             
-            VStack{
-                CustomKeyboardView(vm: vm, isShowScannerView: $isShowScannerView)
+            if !isShowScannerView {
+                VStack{
+                    CustomKeyboardView(vm: vm, isShowScannerView: $isShowScannerView, isShowImagePickerView: $isShowImagePickerView)
+                }
             }
+            
         }
         
         .background(Color.atlasWhite)
+        .sheet(isPresented: $isShowImagePickerView) {
+            ImagePicker(vm: textRecognizerVM, sourceType: .photoLibrary)
+        }
         .sheet(isPresented: $isShowScannerView) {
-            ImagePicker(vm: textRecoqnizerVM)
+//            ScannerView(vm: textRecognizerVM)
+            ImagePicker(vm: textRecognizerVM, sourceType: .camera)
+        }
+        .onChange(of: textRecognizerVM.recognizedExpression) { newValue in
+            vm.processDetailFromRecognizer(detail: newValue)
         }
     }
 }

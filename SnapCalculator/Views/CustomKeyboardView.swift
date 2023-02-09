@@ -11,6 +11,7 @@ struct CustomKeyboardView: View {
     @ObservedObject var vm: CalculatorViewModel
     @AppStorage("theme") var theme : String = "green"
     @Binding var isShowScannerView: Bool
+    @Binding var isShowImagePickerView: Bool
     var body: some View {
         LazyVGrid(columns: [
             GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())
@@ -51,11 +52,29 @@ struct CustomKeyboardView: View {
                     .disabled(btn == .none)
                 case .camera:
                     Button {
-                        isShowScannerView = true
+                        withAnimation {
+                            isShowScannerView = true
+                            isShowImagePickerView = false
+                        }
                     } label: {
                         HStack{
                             Spacer()
-                            Image(systemName: "camera.fill")
+                            Image(systemName: "camera")
+                                .foregroundColor(theme == "green" ? Color.herbal : Color.darkRose)
+                                .font(Font.largeTitle)
+                            Spacer()
+                        }
+                    }
+                    .frame(height: 80)
+                    .disabled(btn == .none)
+                case .gallery:
+                    Button {
+                        isShowImagePickerView = true
+                        isShowScannerView = false
+                    } label: {
+                        HStack{
+                            Spacer()
+                            Image(systemName: "photo.on.rectangle")
                                 .foregroundColor(theme == "green" ? Color.herbal : Color.darkRose)
                                 .font(Font.largeTitle)
                             Spacer()
@@ -77,10 +96,6 @@ struct CustomKeyboardView: View {
                     }
                     .padding(.vertical, 20)
                 }
-                
-                
-
-                
             }
         }
     }
@@ -88,6 +103,6 @@ struct CustomKeyboardView: View {
 
 struct CustomKeyboardView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomKeyboardView(vm: CalculatorViewModel(), isShowScannerView: .constant(false))
+        CustomKeyboardView(vm: CalculatorViewModel(), isShowScannerView: .constant(false), isShowImagePickerView: .constant(true))
     }
 }

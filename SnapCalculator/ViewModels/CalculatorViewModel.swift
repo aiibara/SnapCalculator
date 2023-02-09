@@ -61,6 +61,22 @@ class CalculatorViewModel : ObservableObject {
         }
     }
     
+    func processDetailFromRecognizer(detail: String) {
+        
+        guard !detail.isEmpty else { return }
+        detailArray = []
+        
+        var cleanedDetail = detail.replacingOccurrences(of: "[x\\*]", with: "×", options: .regularExpression)
+            .replacingOccurrences(of: "[:\\/]", with: "÷", options: .regularExpression)
+        
+        for char in cleanedDetail {
+            let btn = KeyboardKey(rawValue: String(char)) ?? .none
+            if btn != .none {
+                typing(button: btn)
+            }
+        }
+    }
+    
     func countResult() -> String {
         var stringDetail = detail
         var multiplyAndDivide = true

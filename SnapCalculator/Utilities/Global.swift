@@ -30,14 +30,15 @@ enum KeyboardKey: String {
     case saveToFM = "fm"
     case saveToCoreData = "cd"
     case camera = "camera"
+    case gallery = "gallery"
 }
 
 struct Global {
     static let keyboard : [KeyboardKey] = [
-        .C, .saveToFM, .saveToCoreData, .camera,
+        .saveToFM, .saveToCoreData, .camera, .gallery,
         .one, .two, .three,.division_symbol,
         .four, .five, .six,.multiplication_symbol,
         .seven, .eight, .nine, .plus,
-        .none, .zero, .comma,.minus,
+        .C, .zero, .comma,.minus,
     ]
 }

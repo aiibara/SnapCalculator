@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A95BD42299264D800F8D3D1 /* SnapCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BD41299264D800F8D3D1 /* SnapCalculatorApp.swift */; };
-		0A95BD44299264D800F8D3D1 /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BD43299264D800F8D3D1 /* ContentView1.swift */; };
 		0A95BD46299264DA00F8D3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A95BD45299264DA00F8D3D1 /* Assets.xcassets */; };
 		0A95BD49299264DA00F8D3D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A95BD48299264DA00F8D3D1 /* Preview Assets.xcassets */; };
 		0A95BD4B299264DA00F8D3D1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BD4A299264DA00F8D3D1 /* Persistence.swift */; };
@@ -36,6 +35,7 @@
 		0A95BDA22993A05D00F8D3D1 /* ExpressionCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDA02993A05D00F8D3D1 /* ExpressionCoreData+CoreDataClass.swift */; };
 		0A95BDA32993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDA12993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift */; };
 		0A95BDAB2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDAA2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift */; };
+		0A95BDAD2993E7C800F8D3D1 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95BDAC2993E7C800F8D3D1 /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,6 @@
 /* Begin PBXFileReference section */
 		0A95BD3E299264D800F8D3D1 /* SnapCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A95BD41299264D800F8D3D1 /* SnapCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCalculatorApp.swift; sourceTree = "<group>"; };
-		0A95BD43299264D800F8D3D1 /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 		0A95BD45299264DA00F8D3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A95BD48299264DA00F8D3D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A95BD4A299264DA00F8D3D1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		0A95BDA02993A05D00F8D3D1 /* ExpressionCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpressionCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0A95BDA12993A05D00F8D3D1 /* ExpressionCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpressionCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0A95BDAA2993B92F00F8D3D1 /* TextRecoqnizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecoqnizerViewModel.swift; sourceTree = "<group>"; };
+		0A95BDAC2993E7C800F8D3D1 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,6 @@
 				0A95BD762992659800F8D3D1 /* Screens */,
 				0A95BD742992656400F8D3D1 /* Models */,
 				0A95BD41299264D800F8D3D1 /* SnapCalculatorApp.swift */,
-				0A95BD43299264D800F8D3D1 /* ContentView1.swift */,
 				0A95BD722992651400F8D3D1 /* ContentView.swift */,
 				0A95BD45299264DA00F8D3D1 /* Assets.xcassets */,
 				0A95BD4A299264DA00F8D3D1 /* Persistence.swift */,
@@ -236,6 +235,7 @@
 				0A95BD912993713100F8D3D1 /* CustomThemeSwitch.swift */,
 				0A95BD932993747600F8D3D1 /* HistoryView.swift */,
 				0A95BD952993749C00F8D3D1 /* ImagePickerView.swift */,
+				0A95BDAC2993E7C800F8D3D1 /* ScannerView.swift */,
 				0A95BD9729938DFB00F8D3D1 /* CustomKeyboardView.swift */,
 			);
 			path = Views;
@@ -400,10 +400,10 @@
 				0A95BD852992811B00F8D3D1 /* Storage.swift in Sources */,
 				0A95BD8B2993413700F8D3D1 /* Global.swift in Sources */,
 				0A95BD962993749C00F8D3D1 /* ImagePickerView.swift in Sources */,
-				0A95BD44299264D800F8D3D1 /* ContentView1.swift in Sources */,
 				0A95BD9829938DFB00F8D3D1 /* CustomKeyboardView.swift in Sources */,
 				0A95BD42299264D800F8D3D1 /* SnapCalculatorApp.swift in Sources */,
 				0A95BD4E299264DA00F8D3D1 /* SnapCalculator.xcdatamodeld in Sources */,
+				0A95BDAD2993E7C800F8D3D1 /* ScannerView.swift in Sources */,
 				0A95BD9B299396DE00F8D3D1 /* DataManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

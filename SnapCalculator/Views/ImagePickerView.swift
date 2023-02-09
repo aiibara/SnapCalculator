@@ -13,9 +13,9 @@ import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
     
-    @ObservedObject var vm: TextRecoqnizerViewModel
+    @ObservedObject var vm: TextRecognizerViewModel
     @Environment(\.presentationMode) private var presentationMode
-    var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    var sourceType: UIImagePickerController.SourceType
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
